@@ -1,6 +1,11 @@
 import { DatabaseSync } from "node:sqlite";
+import path from "node:path";
 
-export const data = new DatabaseSync("./data.db");
+const dbPath = process.env.VERCEL 
+  ? path.join("/tmp", "data.db") 
+  : "./data.db";
+
+export const data = new DatabaseSync(dbPath);
 
 try{
   
