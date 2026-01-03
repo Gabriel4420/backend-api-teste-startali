@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node --experimental-vm-modules --no-warnings node_modules/jest/bin/jest.js",
     "start": "tsx watch src/server.ts ",
-    "build": "src",
+    "build": "tsup src/server.ts --format esm --out-dir dist --clean",
     "createDB": "ts-node src/db.ts"
   },
   "keywords": [],
@@ -21,6 +21,7 @@
     "express": "^5.2.1",
     "ts-jest": "^29.4.6",
     "ts-node": "^10.9.2",
+    "tsup": "^8.5.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   },
