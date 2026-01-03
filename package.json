@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --experimental-vm-modules --no-warnings node_modules/jest/bin/jest.js",
     "start": "tsx watch src/server.ts ",
     "build": "src",
     "createDB": "ts-node src/db.ts"
@@ -14,14 +14,18 @@
   "license": "ISC",
   "type": "module",
   "devDependencies": {
+    "@jest/globals": "^29.7.0",
     "@types/express": "^5.0.6",
+    "@types/jest": "^30.0.0",
     "@types/node": "^25.0.3",
     "express": "^5.2.1",
+    "ts-jest": "^29.4.6",
     "ts-node": "^10.9.2",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   },
   "dependencies": {
+    "jest": "^29.7.0",
     "node-sqlite": "^0.0.2-security",
     "zod": "^4.3.4"
   }
