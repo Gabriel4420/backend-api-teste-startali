@@ -145,5 +145,5 @@ Remove permanentemente um usuário do banco de dados.
 
 | Status | Descrição | Exemplo de Corpo |
 | :--- | :--- | :--- |
-| ✅ `200` | Sucesso | `{"message": "User deleted"}` |
-| ❌ `404` | Não encontrado | `{"message": "User not found"}` |
+| ✅ `200` | Sucesso | `{"message": "Usuário deletado"}` |
+| ❌ `404` | Não encontrado | `{"message": "usuário não encontrado"}` |
