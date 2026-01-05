@@ -53,4 +53,4 @@ MIT License
 
 ---
 
-**Desenvolvido com ❤️ pela Startali**
+**Desenvolvido com ❤️ pelo Gabriel Rodrigues**
